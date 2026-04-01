@@ -1,7 +1,4 @@
-# 🌸 Posty Parfume — Landing Page
-
-> **"Be Different, Smell Different"**  
-> Landing page brand parfume, dibangun menggunakan React + Vite dan terintegrasi dengan Contentful CMS.
+# Posty Parfume Landing Page
 
 ---
 
@@ -16,6 +13,7 @@
 - [Struktur Sections](#-struktur-sections-aida)
 - [Scripts](#-scripts)
 - [Certificate](#-certificate)
+- [Preview](#-preview)
 
 ---
 
@@ -99,7 +97,7 @@ Pastikan sudah terinstall:
 
 **1. Clone atau buka folder project**
 ```bash
-cd c: ... \DummyPostyParfume
+cd c: ... \dummy-posty-parfume
 ```
 
 **2. Install dependencies**
@@ -189,6 +187,12 @@ Landing page menggunakan teknik copywriting **AIDA**:
 
 - **Heading:** Playfair Display (Google Fonts)
 - **Body:** Inter (Google Fonts)
+
+---
+
+## 🌐 Preview
+You can view the live website here:
+[dummypostyparfume](https://faizfadllan.github.io/dummy-posty-parfume/)
 
 ---
 
