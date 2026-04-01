@@ -1,0 +1,181 @@
+/* =============================================
+   POSTY PARFUME – Global Styles
+   Flat Design + Peach Color Palette
+   ============================================= */
+
+/* ---------- CSS Variables / Design Tokens ---------- */
+:root {
+  /* Color Palette */
+  --color-peach-lightest: #FEEAC9;
+  --color-peach-light: #FFCDC9;
+  --color-peach-mid: #FDACAC;
+  --color-peach-bold: #FD7979;
+  --color-peach-dark: #e85e5e;
+  --color-cream: #FFF8F0;
+  --color-white: #ffffff;
+  --color-text-dark: #2D1F1F;
+  --color-text-body: #5A3E3E;
+  --color-text-muted: #9B7B7B;
+  --color-border: #FDACAC;
+
+  /* Flat Design Shadows */
+  --shadow-flat: 4px 4px 0px #FDACAC;
+  --shadow-flat-bold: 4px 4px 0px #FD7979;
+  --shadow-flat-dark: 4px 4px 0px #e85e5e;
+
+  /* Typography */
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', -apple-system, sans-serif;
+
+  /* Spacing */
+  --section-padding: 80px 24px;
+  --container-max: 1200px;
+
+  /* Transitions */
+  --transition: 0.2s ease;
+}
+
+/* ---------- Reset & Base ---------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-cream);
+  color: var(--color-text-dark);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ---------- Container ---------- */
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ---------- Typography ---------- */
+.section-eyebrow {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-peach-bold);
+  margin-bottom: 12px;
+  display: block;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 700;
+  color: var(--color-text-dark);
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.section-subtitle {
+  font-size: 1.05rem;
+  color: var(--color-text-body);
+  max-width: 580px;
+  line-height: 1.7;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 14px 28px;
+  cursor: pointer;
+  border: 2.5px solid var(--color-text-dark);
+  transition: transform var(--transition), box-shadow var(--transition);
+  text-decoration: none;
+  outline: none;
+  position: relative;
+}
+
+.btn-primary {
+  background-color: var(--color-peach-bold);
+  color: var(--color-white);
+  border-color: var(--color-text-dark);
+  box-shadow: var(--shadow-flat-bold);
+}
+
+.btn-primary:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px var(--color-text-dark);
+}
+
+.btn-primary:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px var(--color-text-dark);
+}
+
+.btn-secondary {
+  background-color: var(--color-white);
+  color: var(--color-text-dark);
+  border-color: var(--color-text-dark);
+  box-shadow: var(--shadow-flat);
+}
+
+.btn-secondary:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px var(--color-peach-bold);
+  border-color: var(--color-peach-bold);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--color-text-dark);
+  border-color: var(--color-peach-bold);
+  box-shadow: 3px 3px 0px var(--color-peach-bold);
+}
+
+.btn-outline:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0px var(--color-peach-bold);
+  background-color: var(--color-peach-lightest);
+}
+
+/* ---------- Utility ---------- */
+.text-center { text-align: center; }
+.text-bold { font-weight: 700; }
+
+/* ---------- Scroll animation ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,0 +1,148 @@
+/* ---- CTA Section ---- */
+.cta-section {
+  padding: var(--section-padding);
+  background-color: var(--color-peach-bold);
+  position: relative;
+  overflow: hidden;
+  border-top: 3px solid var(--color-text-dark);
+  border-bottom: 3px solid var(--color-text-dark);
+}
+
+/* Decorative shapes */
+.cta-section__deco {
+  position: absolute;
+  border: 3px solid rgba(255, 255, 255, 0.15);
+  pointer-events: none;
+}
+
+.cta-section__deco--1 {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  top: -100px;
+  right: -80px;
+}
+
+.cta-section__deco--2 {
+  width: 200px;
+  height: 200px;
+  bottom: -60px;
+  left: -50px;
+  border-radius: 50%;
+}
+
+/* Content */
+.cta-section__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+  text-align: center;
+}
+
+.cta-section__title {
+  color: var(--color-white);
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  margin-bottom: 20px;
+}
+
+.cta-section__title em {
+  font-style: italic;
+  color: var(--color-peach-lightest);
+}
+
+.cta-section__subtitle {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.75;
+  max-width: 580px;
+  margin: 0 auto 32px;
+}
+
+/* Guarantees */
+.cta-section__guarantees {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.cta-section__guarantee {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-peach-lightest);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.cta-section__guarantee svg {
+  font-size: 1rem;
+}
+
+/* Actions */
+.cta-section__actions {
+  display: flex;
+  justify-content: center;
+}
+
+/* WhatsApp CTA Button */
+.cta-section__wa-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  background-color: #25D366;
+  color: var(--color-white);
+  border: 3px solid var(--color-text-dark);
+  box-shadow: 6px 6px 0px var(--color-text-dark);
+  padding: 18px 32px;
+  font-weight: 700;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  text-decoration: none;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.cta-section__wa-btn:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 9px 9px 0px var(--color-text-dark);
+}
+
+.cta-section__wa-icon {
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+.cta-section__wa-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 2px;
+}
+
+.cta-section__wa-text span {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.cta-section__wa-text small {
+  font-size: 0.78rem;
+  opacity: 0.85;
+  font-weight: 400;
+}
+
+@media (max-width: 600px) {
+  .cta-section__wa-btn {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 28px;
+  }
+
+  .cta-section__wa-text {
+    text-align: center;
+  }
+
+  .cta-section__guarantees {
+    gap: 16px;
+  }
+}

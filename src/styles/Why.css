@@ -1,0 +1,73 @@
+/* ---- Why / Value Proposition ---- */
+.why {
+  padding: var(--section-padding);
+  background-color: var(--color-peach-lightest);
+  border-top: 3px solid var(--color-border);
+  border-bottom: 3px solid var(--color-border);
+}
+
+.why__header {
+  margin-bottom: 56px;
+}
+
+.why__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* Card */
+.why__card {
+  background-color: var(--color-white);
+  border: 2.5px solid var(--color-text-dark);
+  box-shadow: 5px 5px 0px var(--color-peach-bold);
+  padding: 32px 24px;
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition),
+    transitionDelay var(--transition);
+}
+
+.why__card:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 8px 8px 0px var(--color-peach-bold);
+}
+
+.why__card-icon {
+  width: 52px;
+  height: 52px;
+  background-color: var(--color-peach-lightest);
+  border: 2px solid var(--color-peach-mid);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: var(--color-peach-bold);
+  margin-bottom: 18px;
+}
+
+.why__card-title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  margin-bottom: 10px;
+}
+
+.why__card-desc {
+  font-size: 0.92rem;
+  color: var(--color-text-body);
+  line-height: 1.65;
+}
+
+@media (max-width: 900px) {
+  .why__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .why__grid {
+    grid-template-columns: 1fr;
+  }
+}
