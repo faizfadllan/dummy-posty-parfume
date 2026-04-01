@@ -1,7 +1,7 @@
 # 🌸 Posty Parfume — Landing Page
 
 > **"Be Different, Smell Different"**  
-> Landing page brand parfume lokal dengan karakter, dibangun menggunakan React + Vite dan terintegrasi dengan Contentful CMS.
+> Landing page brand parfume, dibangun menggunakan React + Vite dan terintegrasi dengan Contentful CMS.
 
 ---
 
@@ -19,8 +19,6 @@
 ---
 
 ## 🚀 Demo
-
-Jalankan secara lokal di: **http://localhost:5173**
 
 ---
 
