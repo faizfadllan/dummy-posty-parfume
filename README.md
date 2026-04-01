@@ -15,6 +15,7 @@
 - [Konfigurasi Contentful](#-konfigurasi-contentful)
 - [Struktur Sections](#-struktur-sections-aida)
 - [Scripts](#-scripts)
+- [Certificate](#-certificate)
 
 ---
 
@@ -189,3 +190,7 @@ Landing page menggunakan teknik copywriting **AIDA**:
 - **Heading:** Playfair Display (Google Fonts)
 - **Body:** Inter (Google Fonts)
 
+---
+
+## 🏅 Certificate
+https://www.codepolitan.com/c/1Q4UBIE/
